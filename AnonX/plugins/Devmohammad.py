@@ -15,15 +15,15 @@ from random import  choice, randint
 
                 
 @app.on_message(
-    command(["محمد","محمد مصطفى","حمد","المطور","Mohammad","حمودة"])
+    command(["أحمد موساشي","احمد موساشي","موساشي","المطور"])
     & filters.group
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("PPF22")
+    usr = await client.get_chat("zxhduf")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━━𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 ‌♡⁩━━⩺\n\n‍ ¦dev :{name}\n ¦user :@{usr.username}\n ¦id :`{usr.id}`\n ¦bio :{usr.bio}\n\n**⩹━━𝗠𝗢𝗛𝗔𝗠𝗠𝗔𝗗 ‌♡⁩━━⩺**", 
+    await message.reply_photo(photo,       caption=f"**⩹━━موساشــي⁩━━⩺\n\n‍ ¦dev :{name}\n ¦user :@{usr.username}\n ¦id :`{usr.id}`\n ¦bio :{usr.bio}\n\n**⩹━موساشـي━━⩺**", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
